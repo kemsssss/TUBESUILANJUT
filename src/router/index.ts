@@ -46,6 +46,18 @@ const router = createRouter({
       meta: { title: "Chat - SportConnect" }
     },
     { 
+      path: "/riwayat-booking",
+      name: "riwayat-booking",
+      component: () => import("../views/RiwayatBookingView.vue"),
+      meta: { title: "Riwayat Booking - SportConnect" }
+    },
+    { 
+      path: "/riwayat-pertandingan",
+      name: "riwayat-pertandingan",
+      component: () => import("../views/RiwayatPertandinganView.vue"),
+      meta: { title: "Riwayat Pertandingan - SportConnect" }
+    },
+    { 
       path: "/profil", 
       name: "profil", 
       component: () => import("../views/ProfilView.vue"), // Lazy loading untuk profil
